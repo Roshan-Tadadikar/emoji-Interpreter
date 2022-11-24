@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles.css";
+import "./style.css";
 
 var EmjoiDict = {
   "🍇": "Grapes",
