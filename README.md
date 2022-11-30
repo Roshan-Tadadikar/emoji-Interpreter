@@ -4,6 +4,12 @@ Hey there! Did you too struggle with emojis? Not anymore, try out this website t
 You can access it [here](https://emoji-interpreter-fc.netlify.app/)
 
 Tech stack used:
+
+
 ReactJS
+
+
 HTML
+
+
 CSS
