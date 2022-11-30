@@ -1,7 +1,9 @@
 import { useState } from "react";
-import "./style.css";
+import "./styles.css";
 
 var EmjoiDict = {
+  "🍇": "Grapes",
+  "🍇": "Grapes",
   "🍇": "Grapes",
   "🍈": "Melon",
   "🍉": "Watermelon",
@@ -136,10 +138,11 @@ export default function App() {
     var userInput = event.target.value;
 
     var meaning = EmjoiDict[userInput];
-    if (meaning === undefined) {
-      meaning = "we dont have this in our database";
+    if (userInput === "") {
+      setMeaning("");
+    } else {
+      setMeaning(EmjoiDict[userInput] || "we don't have this in our DB");
     }
-    setMeaning(meaning);
   }
 
   function emojiclickHandler(emoji) {
@@ -151,7 +154,6 @@ export default function App() {
     <div className="App">
       <h1> Food and Cutleries</h1>
       <input
-        style={{ borderRadius: "20px" }}
         onChange={likeclickhandler}
         placeholder="put an emoji to know the meaningn of it"
       />
