@@ -4,3 +4,13 @@
   font-family: "Dancing Script", cursive;
   text-align: center;
 }
+
+body {
+  background: linear-gradient(#608666, #22e65c);
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  outline: none;
+}
